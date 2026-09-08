@@ -1,0 +1,164 @@
+[
+  {
+    "id": "ho-hoan-kiem",
+    "name": "Hồ Hoàn Kiếm",
+    "category": "thien-nhien",
+    "lat": 21.0285,
+    "lng": 105.8542,
+    "address": "Hàng Trống, Hoàn Kiếm, Hà Nội",
+    "description": "Hồ nước ngọt nằm giữa trung tâm thủ đô, gắn với truyền thuyết vua Lê Lợi trả gươm thần cho Rùa Vàng. Nơi có Tháp Rùa và đền Ngọc Sơn."
+  },
+  {
+    "id": "den-ngoc-son",
+    "name": "Đền Ngọc Sơn",
+    "category": "ton-giao",
+    "lat": 21.0294,
+    "lng": 105.8523,
+    "address": "Đinh Tiên Hoàng, Hoàn Kiếm, Hà Nội",
+    "description": "Ngôi đền nằm trên đảo Ngọc giữa hồ Hoàn Kiếm, nối với bờ bằng cầu Thê Húc màu đỏ son, thờ Văn Xương Đế Quân và Trần Hưng Đạo."
+  },
+  {
+    "id": "lang-chu-tich-ho-chi-minh",
+    "name": "Lăng Chủ tịch Hồ Chí Minh",
+    "category": "di-tich-lich-su",
+    "lat": 21.0369,
+    "lng": 105.8347,
+    "address": "2 Hùng Vương, Ba Đình, Hà Nội",
+    "description": "Nơi lưu giữ và bảo quản thi hài Chủ tịch Hồ Chí Minh, công trình kiến trúc quan trọng tại quảng trường Ba Đình lịch sử."
+  },
+  {
+    "id": "quang-truong-ba-dinh",
+    "name": "Quảng trường Ba Đình",
+    "category": "di-tich-lich-su",
+    "lat": 21.0375,
+    "lng": 105.8342,
+    "address": "Hùng Vương, Ba Đình, Hà Nội",
+    "description": "Quảng trường lớn nhất Việt Nam, nơi Chủ tịch Hồ Chí Minh đọc Tuyên ngôn Độc lập ngày 2/9/1945."
+  },
+  {
+    "id": "hoang-thanh-thang-long",
+    "name": "Hoàng Thành Thăng Long",
+    "category": "di-tich-lich-su",
+    "lat": 21.0359,
+    "lng": 105.8398,
+    "address": "19C Hoàng Diệu, Ba Đình, Hà Nội",
+    "description": "Di sản văn hóa thế giới UNESCO, quần thể di tích gắn với lịch sử kinh thành Thăng Long qua nhiều triều đại."
+  },
+  {
+    "id": "van-mieu-quoc-tu-giam",
+    "name": "Văn Miếu - Quốc Tử Giám",
+    "category": "di-tich-lich-su",
+    "lat": 21.0287,
+    "lng": 105.8355,
+    "address": "58 Quốc Tử Giám, Đống Đa, Hà Nội",
+    "description": "Trường đại học đầu tiên của Việt Nam, thờ Khổng Tử, biểu tượng của truyền thống hiếu học và khoa cử."
+  },
+  {
+    "id": "cau-long-bien",
+    "name": "Cầu Long Biên",
+    "category": "kien-truc",
+    "lat": 21.0425,
+    "lng": 105.8600,
+    "address": "Bắc qua sông Hồng, Hà Nội",
+    "description": "Cây cầu thép do Pháp xây dựng đầu thế kỷ 20, chứng nhân lịch sử của Hà Nội qua nhiều thời kỳ."
+  },
+  {
+    "id": "nha-tho-lon-ha-noi",
+    "name": "Nhà thờ Lớn Hà Nội",
+    "category": "ton-giao",
+    "lat": 21.0286,
+    "lng": 105.8493,
+    "address": "40 Nhà Chung, Hoàn Kiếm, Hà Nội",
+    "description": "Nhà thờ chính tòa Công giáo mang phong cách kiến trúc Gothic, xây dựng từ năm 1886."
+  },
+  {
+    "id": "chua-mot-cot",
+    "name": "Chùa Một Cột",
+    "category": "ton-giao",
+    "lat": 21.0357,
+    "lng": 105.8335,
+    "address": "Chùa Một Cột, Ba Đình, Hà Nội",
+    "description": "Ngôi chùa cổ có kiến trúc độc đáo hình bông sen, được xây dựng từ thời nhà Lý."
+  },
+  {
+    "id": "ho-tay",
+    "name": "Hồ Tây",
+    "category": "thien-nhien",
+    "lat": 21.0578,
+    "lng": 105.8231,
+    "address": "Tây Hồ, Hà Nội",
+    "description": "Hồ nước ngọt lớn nhất Hà Nội, nơi có nhiều chùa cổ, quán cà phê và không gian dạo bộ ven hồ."
+  },
+  {
+    "id": "chua-tran-quoc",
+    "name": "Chùa Trấn Quốc",
+    "category": "ton-giao",
+    "lat": 21.0490,
+    "lng": 105.8355,
+    "address": "Thanh Niên, Tây Hồ, Hà Nội",
+    "description": "Ngôi chùa cổ nhất Hà Nội, tọa lạc trên bán đảo nhỏ phía đông Hồ Tây, nổi tiếng với tòa bảo tháp lục độ đài sen."
+  },
+  {
+    "id": "nha-hat-lon-ha-noi",
+    "name": "Nhà hát Lớn Hà Nội",
+    "category": "kien-truc",
+    "lat": 21.0245,
+    "lng": 105.8574,
+    "address": "1 Tràng Tiền, Hoàn Kiếm, Hà Nội",
+    "description": "Công trình kiến trúc Pháp cổ điển, biểu tượng văn hóa nghệ thuật của thủ đô, xây dựng đầu thế kỷ 20."
+  },
+  {
+    "id": "cot-co-ha-noi",
+    "name": "Cột cờ Hà Nội",
+    "category": "di-tich-lich-su",
+    "lat": 21.0334,
+    "lng": 105.8397,
+    "address": "28A Điện Biên Phủ, Ba Đình, Hà Nội",
+    "description": "Kỳ đài cổ được xây dựng thời Nguyễn, biểu tượng của Hà Nội, hiện thuộc khuôn viên Bảo tàng Lịch sử Quân sự."
+  },
+  {
+    "id": "bao-tang-dan-toc-hoc",
+    "name": "Bảo tàng Dân tộc học Việt Nam",
+    "category": "bao-tang",
+    "lat": 21.0388,
+    "lng": 105.7936,
+    "address": "Nguyễn Văn Huyên, Cầu Giấy, Hà Nội",
+    "description": "Nơi trưng bày, lưu giữ hiện vật văn hóa của 54 dân tộc Việt Nam, kiến trúc nhà truyền thống ngoài trời đặc sắc."
+  },
+  {
+    "id": "bao-tang-lich-su-quoc-gia",
+    "name": "Bảo tàng Lịch sử Quốc gia",
+    "category": "bao-tang",
+    "lat": 21.0246,
+    "lng": 105.8593,
+    "address": "1 Tràng Tiền, Hoàn Kiếm, Hà Nội",
+    "description": "Bảo tàng lưu giữ hiện vật quý giá về lịch sử Việt Nam từ thời tiền sử đến hiện đại."
+  },
+  {
+    "id": "pho-co-ha-noi",
+    "name": "Phố cổ Hà Nội (36 phố phường)",
+    "category": "kien-truc",
+    "lat": 21.0333,
+    "lng": 105.8500,
+    "address": "Khu phố cổ, Hoàn Kiếm, Hà Nội",
+    "description": "Khu phố cổ với kiến trúc nhà ống truyền thống, mỗi phố gắn với một nghề thủ công xưa, sầm uất hàng quán và ẩm thực đường phố."
+  },
+  {
+    "id": "cho-dong-xuan",
+    "name": "Chợ Đồng Xuân",
+    "category": "kien-truc",
+    "lat": 21.0378,
+    "lng": 105.8494,
+    "address": "Đồng Xuân, Hoàn Kiếm, Hà Nội",
+    "description": "Chợ lớn nhất và lâu đời nhất trong khu phố cổ Hà Nội, trung tâm buôn bán sầm uất từ thời Pháp thuộc."
+  },
+  {
+    "id": "com-ga-pho-co",
+    "name": "Ẩm thực phố cổ - Phở, Bún chả",
+    "category": "am-thuc",
+    "lat": 21.0345,
+    "lng": 105.8510,
+    "address": "Khu phố cổ, Hoàn Kiếm, Hà Nội",
+    "description": "Khu vực tập trung nhiều quán ăn đặc sản Hà Nội trứ danh như phở, bún chả, chả cá, bánh cuốn."
+  }
+]

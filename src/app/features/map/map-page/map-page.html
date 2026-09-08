@@ -1,0 +1,32 @@
+<div class="relative flex h-screen w-screen overflow-hidden bg-slate-100">
+  <aside class="hidden w-[360px] shrink-0 border-r border-slate-200 md:block">
+    <app-sidebar />
+  </aside>
+
+  @if (mapState.sidebarOpen()) {
+    <div class="fixed inset-0 z-[1100] flex md:hidden">
+      <div class="w-[85%] max-w-sm bg-white shadow-xl">
+        <app-sidebar />
+      </div>
+      <button
+        type="button"
+        class="flex-1 bg-black/30"
+        (click)="mapState.toggleSidebar()"
+        aria-label="Đóng danh sách"
+      ></button>
+    </div>
+  }
+
+  <main class="relative flex-1">
+    <app-map-view />
+    <app-map-controls />
+
+    <button
+      type="button"
+      class="absolute left-4 top-4 z-[1000] rounded-lg bg-white/90 px-3 py-2 text-sm font-medium text-slate-700 shadow-lg backdrop-blur md:hidden"
+      (click)="mapState.toggleSidebar()"
+    >
+      ☰ Danh sách
+    </button>
+  </main>
+</div>

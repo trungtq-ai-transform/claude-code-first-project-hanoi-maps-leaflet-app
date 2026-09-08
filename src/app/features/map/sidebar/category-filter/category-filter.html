@@ -1,0 +1,33 @@
+<div>
+  <div class="mb-1.5 flex items-center justify-between">
+    <h3 class="text-xs font-semibold uppercase tracking-wide text-slate-500">Danh mục</h3>
+    @if (mapState.activeCategories().size > 0) {
+      <button
+        type="button"
+        class="text-xs font-medium text-emerald-600 hover:text-emerald-700"
+        (click)="mapState.clearCategories()"
+      >
+        Xoá lọc
+      </button>
+    }
+  </div>
+
+  <div class="flex flex-wrap gap-1.5">
+    @for (category of categories; track category.value) {
+      <button
+        type="button"
+        class="flex items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-medium transition-colors"
+        [class.border-emerald-600]="isActive(category.value)"
+        [class.bg-emerald-600]="isActive(category.value)"
+        [class.text-white]="isActive(category.value)"
+        [class.border-slate-200]="!isActive(category.value)"
+        [class.bg-white]="!isActive(category.value)"
+        [class.text-slate-600]="!isActive(category.value)"
+        (click)="toggle(category.value)"
+      >
+        <span>{{ category.icon }}</span>
+        <span>{{ category.label }}</span>
+      </button>
+    }
+  </div>
+</div>

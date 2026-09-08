@@ -1,0 +1,45 @@
+<div class="flex flex-col gap-2 rounded-xl bg-white/90 p-2 shadow-lg backdrop-blur">
+  <div class="flex overflow-hidden rounded-lg border border-slate-200">
+    <button
+      type="button"
+      class="px-3 py-1.5 text-xs font-medium transition-colors"
+      [class.bg-emerald-600]="mapState.activeLayer() === 'street'"
+      [class.text-white]="mapState.activeLayer() === 'street'"
+      [class.text-slate-600]="mapState.activeLayer() !== 'street'"
+      (click)="setLayer('street')"
+    >
+      🗺️ Bản đồ
+    </button>
+    <button
+      type="button"
+      class="px-3 py-1.5 text-xs font-medium transition-colors"
+      [class.bg-emerald-600]="mapState.activeLayer() === 'satellite'"
+      [class.text-white]="mapState.activeLayer() === 'satellite'"
+      [class.text-slate-600]="mapState.activeLayer() !== 'satellite'"
+      (click)="setLayer('satellite')"
+    >
+      🛰️ Vệ tinh
+    </button>
+  </div>
+
+  <button
+    type="button"
+    class="flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-xs font-medium transition-colors"
+    [class.bg-amber-500]="mapState.trafficVisible()"
+    [class.text-white]="mapState.trafficVisible()"
+    [class.bg-slate-100]="!mapState.trafficVisible()"
+    [class.text-slate-600]="!mapState.trafficVisible()"
+    (click)="toggleTraffic()"
+    title="Dữ liệu giao thông minh hoạ"
+  >
+    🚦 Giao thông
+  </button>
+
+  <button
+    type="button"
+    class="rounded-lg bg-slate-100 px-3 py-1.5 text-xs font-medium text-slate-600 transition-colors hover:bg-slate-200"
+    (click)="recenter()"
+  >
+    🎯 Về trung tâm
+  </button>
+</div>
