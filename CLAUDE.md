@@ -57,12 +57,23 @@ CommonJS, and keeping it out of components avoids fighting Angular's change dete
 `renderMarkers`/`setLayer`/`setTrafficVisible`/`flyTo` whenever the corresponding `MapState` signal
 changes. There's no SSR (`ng new` was run without `--ssr`), so DOM access here is always safe.
 
+`Theme` (`core/services/theme.ts`) is a separate signal-based store (not part of `MapState`) that owns
+dark/light mode: `isDark` signal, `toggle()` method. It initializes from `localStorage`
+(`theme-preference` key), falling back to `window.matchMedia('(prefers-color-scheme: dark)')` when the
+user has never toggled, and keeps listening to OS scheme changes until the first explicit `toggle()`
+call. A constructor `effect()` syncs `isDark` to a `dark` class on `document.documentElement`, which
+Tailwind v4's `@custom-variant dark (&:where(.dark, .dark *));` (declared in `src/styles.css`) uses to
+scope every `dark:` utility in the templates. An inline script in `src/index.html`'s `<head>` duplicates
+the same init logic synchronously before Angular bootstraps, to avoid a flash of the wrong theme on
+load. Leaflet's popup/marker DOM is injected outside Angular's template compiler, so its dark-mode
+colors are plain `.dark .landmark-popup__*` CSS rules in `src/styles.css`, not `dark:` classes.
+
 ### Component tree
 
 ```
 App
 └─ MapPage (layout shell: desktop sidebar column + mobile drawer + map area)
-   ├─ Sidebar
+   ├─ Sidebar               (header also has the dark-mode toggle button → Theme.toggle())
    │  ├─ SearchBar          (writes MapState.searchQuery)
    │  ├─ CategoryFilter     (toggles MapState.activeCategories)
    │  └─ LandmarkList
