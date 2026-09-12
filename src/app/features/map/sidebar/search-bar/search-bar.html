@@ -1,16 +1,16 @@
 <div class="relative">
-  <span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-slate-400">🔍</span>
+  <span class="pointer-events-none absolute inset-y-0 left-3 flex items-center text-slate-400 dark:text-slate-500">🔍</span>
   <input
     type="text"
     placeholder="Tìm địa danh ở Hà Nội..."
-    class="w-full rounded-lg border border-slate-200 bg-white py-2 pl-9 pr-8 text-sm text-slate-800 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500"
+    class="w-full rounded-lg border border-slate-200 bg-white py-2 pl-9 pr-8 text-sm text-slate-800 placeholder:text-slate-400 focus:border-emerald-500 focus:outline-none focus:ring-1 focus:ring-emerald-500 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-200 dark:placeholder:text-slate-500 dark:focus:border-emerald-400 dark:focus:ring-emerald-400"
     [value]="mapState.searchQuery()"
     (input)="onInput($event)"
   />
   @if (mapState.searchQuery()) {
     <button
       type="button"
-      class="absolute inset-y-0 right-2 flex items-center text-slate-400 hover:text-slate-600"
+      class="absolute inset-y-0 right-2 flex items-center text-slate-400 hover:text-slate-600 dark:text-slate-500 dark:hover:text-slate-300"
       (click)="clear()"
       aria-label="Xoá tìm kiếm"
     >

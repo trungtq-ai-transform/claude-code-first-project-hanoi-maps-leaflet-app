@@ -1,5 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { MapState } from '../../../core/services/map-state';
+import { Theme } from '../../../core/services/theme';
 import { CategoryFilter } from './category-filter/category-filter';
 import { LandmarkList } from './landmark-list/landmark-list';
 import { SearchBar } from './search-bar/search-bar';
@@ -12,4 +13,5 @@ import { SearchBar } from './search-bar/search-bar';
 })
 export class Sidebar {
   protected readonly mapState = inject(MapState);
+  protected readonly theme = inject(Theme);
 }

@@ -1,7 +1,7 @@
 @if (mapState.isLoading()) {
-  <p class="p-2 text-sm text-slate-400">Đang tải danh sách địa danh...</p>
+  <p class="p-2 text-sm text-slate-400 dark:text-slate-500">Đang tải danh sách địa danh...</p>
 } @else if (mapState.filteredLandmarks().length === 0) {
-  <p class="p-2 text-sm text-slate-400">Không tìm thấy địa danh phù hợp.</p>
+  <p class="p-2 text-sm text-slate-400 dark:text-slate-500">Không tìm thấy địa danh phù hợp.</p>
 } @else {
   <div class="flex flex-col gap-1">
     @for (landmark of mapState.filteredLandmarks(); track landmark.id) {

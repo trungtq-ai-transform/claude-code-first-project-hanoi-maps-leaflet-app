@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 html,
 body {
   height: 100%;
@@ -65,4 +67,24 @@ body {
   font-size: 0.875rem;
   color: #475569;
   padding: 0.25rem 0.75rem 0.75rem 0.75rem;
+}
+
+.dark .leaflet-popup-content-wrapper {
+  background: #1e293b;
+}
+
+.dark .leaflet-popup-tip {
+  background: #1e293b;
+}
+
+.dark .landmark-popup__category {
+  color: #34d399;
+}
+
+.dark .landmark-popup__title {
+  color: #f1f5f9;
+}
+
+.dark .landmark-popup__description {
+  color: #cbd5e1;
 }
